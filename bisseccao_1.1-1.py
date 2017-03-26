@@ -4,13 +4,13 @@
 * Resolução do exercício 1 do capítulo 1.1 (Timothy Sauer. Numerical Analysis. Pearson, 2ª Edição)
 * 
 * Executado como : python bisseccao_1.1-1.py <letra> <a> <b> <numero_de_iterações>
-*                  <letra> -> qual as letras o exercício (a, b ou c)
-*				   <a> e <b> -> representam o intervalo [a,b]
+*                 <letra> -> qual as letras o exercício (a, b ou c)
+*                 <a> e <b> -> representam o intervalo [a,b]
 *
 * Parâmetros usados para teste:
-* 								python bisseccao_1.1-1.py a 2 3 20
-*								python bisseccao_1.1-1.py b 1 2 20
-*								python bisseccao_1.1-1.py c 6 7 20
+*                              python bisseccao_1.1-1.py a 2 3 20
+*                              python bisseccao_1.1-1.py b 1 2 20
+*                              python bisseccao_1.1-1.py c 6 7 20
 *
 """
 
