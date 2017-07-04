@@ -1,15 +1,15 @@
 # -*- coding: latin-1 -*-
 """
-* Resolução do exercício 1 do capítulo 1.2 (Timothy Sauer. Numerical Analysis. Pearson, 2ª Edição)
+* Resolução do exercício 4 do capítulo 1.2 (Timothy Sauer. Numerical Analysis. Pearson, 2ª Edição)
 * 
-* Executado como : python ponto-fixo_1.2-1.py <letra> <x>
+* Executado como : python bisecao_1.2-2.py <letra> <x>
 *                 <letra> -> qual as letras o exercício (a, b ou c)
 *                 <x> -> representam o chute inicial xo
 *
 * Parâmetros usados para teste:
-*                              python ponto-fixo_1.2-1.py a 1 
-*                              python ponto-fixo_1.2-1.py b 1 
-*                              python ponto-fixo_1.2-1.py c 1 
+*                              python bisseccao_1.2-4.py a 1 
+*                              python bisseccao_1.2-2.py b 1 
+*                              python bisseccao_1.2-2.py c 1 
 *
 """
 import math
@@ -17,11 +17,11 @@ import sys
 
 
 def ga(x):
-	return (2*x + 2) **(1/3.0) #essa é a função (a)
+	return (2*x + 2/ x ** 2) / 3.0 #essa é a função (a)
 def gb(x):
-	return math.log(7-x) #essa é a função (b)
+	return (2*x + 3 / x ** 2) / 3.0 #essa é a função (b)
 def gc(x):
-	return math.log(4 - math.sin(x)) #essa é a função (c)
+	return (2*x + 5 / x ** 2) / 3.0 #essa é a função (c)
 
 MAX = 200 #constante do número máximo de iterações
 
@@ -51,8 +51,12 @@ def ponto_fixo(letra,x):
 	if (i == 200):
 		print 'Limite de 200 iterações atingido'
 	else:
-		print 'A raiz é: ',
+		print '\nA raiz é: ',
 		print ("%.8f" % x_novo)
+		print 'O número de iterações necessárias foi: ',
+		print ("%d" % i)
+		print 'Chute inicial: ',
+		print ("%d\n" % x)
 
 def main (argv):
 	
